@@ -1,0 +1,287 @@
+/****common***/
+.none{
+	display:none;
+}
+
+.border_bottom_none{
+	border-bottom: none;
+}
+.cate .cate_in .cate_in{
+	height:300px;
+}
+.cate .cate_in .category_title{
+	height:40px;
+	border:1px solid #DDDDDD;
+	border-left:0;
+	border-right: 0;
+	background: url(../images/cate_title_19.png) no-repeat 10px 10px;
+	background-color: #F1F1F1;
+}
+.cate .cate_in .category_title a{
+	float:left;
+	color:#7E7D7D;
+	text-decoration: none;
+	height:40px;
+	line-height: 40px;
+}
+.cate .cate_in .category_title span.right_arr{
+	height:40px;
+	width: 40px;
+	background: url(../images/right_16.png) no-repeat 12px 12px;
+}
+.cate .cate_in .category_title span.goods_total{
+	height:40px;
+	line-height: 40px;
+	margin-right:10px;
+}
+.cate .cate_in .category_title span.goods_total .goods_total_num{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.cate .cate_in .category_title a.cate_all{
+	margin-left:40px;
+}
+.cate .cate_in .category_name{
+	height:64px;
+	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
+}
+.cate .cate_in .category_name.m_h_160{
+	overflow-y: scroll;
+	max-height: 160px;
+}
+.cate .cate_in .category_item.show_all{
+	height:auto;
+	border:1px solid #AAAAAA;
+}
+.cate .cate_in .category_item_title{
+	height:32px;
+	line-height: 32px;
+	text-indent: 4px;
+	width:93px;
+}
+.cate .cate_in .category_name_list{
+	width:977px;
+}
+.cate .cate_in .category_name_list ul{
+	display: inline-block;
+}
+.cate .cate_in .category_name_list li{
+	float: left;
+	width:160px;
+	height:32px;
+}
+.cate .cate_in .category_name_list li a{
+	width:160px;
+	height:32px;
+}
+.cate .cate_in .category_item_list li a{
+	display: inline-block;
+	line-height: 32px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-indent: 20px;
+	color: #0058A2;
+	position: relative;
+}
+.cate .cate_in .category_item_list li:hover a{
+	color: #E8303F;
+}
+.cate .cate_in .category_item_list.multi_check li a:before{
+	content: "";
+	border:1px solid #dddddd;
+	display: inline-block;
+	width:14px;
+	height:14px;
+	position: absolute;
+	top:9px;
+	left:1px;
+}
+.cate .cate_in .category_item_list.multi_check li a.checked:before{
+	background: url(../images/cate_pic_001.png) no-repeat 0px -106px;
+	border-color:#E8303F;
+}
+
+.cate .cate_in .category_item_list.multi_check li:hover a:before{
+	color: #E8303F;
+	border:1px solid #E8303F;
+}
+.cate .cate_in .category_item .multi_check_info{
+	float:left;
+	display: block;
+}
+.cate .cate_in .category_item .multi_check_info.none{
+	display: none;
+}
+.cate .cate_in .category_item .multi_btn_group{
+	height:24px;
+	width:132px;
+	display: block;
+	margin: 10px auto 5px;
+}
+.cate .cate_in .category_item .multi_btn_group span{
+	cursor: pointer;
+	width:52px;
+	height:24px;
+	display: inline-block;
+	line-height: 24px;
+	text-align: center;
+	background-color: #F4F4F4;
+	border: 1px solid #DDDDDD;
+	margin: 0 5px;
+	border-radius: 2px;
+}
+.cate .cate_in .category_item .multi_btn_group span.none{
+	display: inline-block;
+	visibility: hidden;
+}
+.cate .cate_in .category_item .multi_btn_group span:hover{
+    box-shadow: 0 1px 1px rgba(0,1,1,.08);
+}
+.cate .cate_in .category_item .multi_btn_group span.multi_btn_confirm{
+	background-color: #E33C3F;
+	border: 1px solid #E33C3F;
+	color:#ffffff;
+}
+
+
+
+
+.cate .cate_in .category_opr{
+	height:30px;
+	width:130px;
+	display: inline-block;
+}
+.cate .cate_in .category_opr.none{
+	display: none;
+}
+.cate .cate_in .category_opr .category_opr_btn{
+	height:22px;
+	line-height:22px;
+	display: inline-block;
+	margin-top:5px;
+	margin-left:16px;
+	float:left;
+	cursor: pointer;
+}
+.cate .cate_in .category_opr .category_opr_btn.none{
+	visibility: hidden;
+}
+.cate .cate_in .category_opr .more{
+	width:58px;
+	height:22px;
+	text-indent: 7px;
+	position: relative;
+}
+.cate .cate_in .category_opr .more:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right:0;
+	height:0;
+	width:20px;
+	height:22px;
+	border:1px solid #DDDDDD;
+	transition: background-position 0.2s;
+	background: url(../images/cate_pic_001.png) no-repeat 3px 8px;
+}
+.cate .cate_in .category_opr .more:hover{
+	color:#E8303F;
+}
+.cate .cate_in .category_opr .more:hover:after{
+	border:1px solid #E8303F;
+	background-position-y: -10px;
+}
+
+.cate .cate_in .category_opr .more.active:after{
+	background-position-y: -26px;
+}
+.cate .cate_in .category_opr .more.active:hover:after{
+	background-position-y: -44px;
+}
+
+.cate .cate_in .category_opr .mul_sel{
+	width:46px;
+	height:22px;
+	margin-left: 3px;
+	text-indent: 19px;
+	border:1px solid #DDDDDD;
+	background: url(../images/cate_pic_001.png) no-repeat 3px -62px;
+	transition: background-position 0.2s;
+} 
+.cate .cate_in .category_opr .mul_sel:hover{
+	color:#E8303F;
+	border-color:#E8303F;
+	background-position-y: -83px;
+}
+
+/***价格**/
+.cate .cate_in .category_price{
+	height:32px;
+	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
+}
+.cate .cate_in .category_price_list{
+	width:977px;
+}
+.cate .cate_in .category_price_list li{
+	float: left;
+	width:80px;
+	height:32px;
+}
+.cate .cate_in .category_price_list li a{
+	width:160px;
+	height:32px;
+}
+.cate .cate_in .category_price_list .price_range{
+	display: inline-block;
+	margin-left:20px;
+}
+.cate .cate_in .category_price_list .price_range input.price_range_input{
+	float:left;
+	width:40px;
+	height:20px;
+	border:1px solid #CCCCCC;
+	line-height: 20px;
+	margin-top:5px;
+	margin-left:2px;
+	margin-right:2px;
+}
+.cate .cate_in .category_price_list .price_range span{
+	height:20px;
+	display: inline-block;
+	float:left;
+	margin: 6px 2px;
+}
+.cate .cate_in .category_price_list .price_range .price_range_con{
+	margin: 5px 4px;
+	width:46px;
+	cursor: pointer;
+	line-height: 20px;
+	text-align: center;
+	background-color: #F4F4F4;
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;
+} 
+.cate .cate_in .category_price_list .price_range .price_range_con:hover{
+    box-shadow: 0 1px 1px rgba(0,1,1,.08);
+}
+/***衣长***/
+.cate .cate_in .category_length{
+	height:32px;
+	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
+}
+.cate .cate_in .category_length_list{
+	width:977px;
+}
+.cate .cate_in .category_length_list li{
+	float: left;
+	width:80px;
+	height:32px;
+}
+.cate .cate_in .category_length_list li a{
+	width:160px;
+	height:32px;
+}

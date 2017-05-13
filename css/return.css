@@ -1,0 +1,400 @@
+﻿/*****/
+.red_font{
+	color:red;
+}
+.gray_font{
+	color:#999999;
+}
+
+/***当前位置***/
+.current_pos{
+	height:30px;
+	line-height: 30px;
+}
+.current_pos .current_pos_link,.current_pos .gt_span{
+	display: inline-block;
+	color:#EA2D39;
+}
+/***退货流程步骤**/
+.return_process{
+	margin-top: 20px;
+	height:45px;
+}
+.return_process .return_process_step{
+	width:300px;
+	height:45px;
+	color:#ffffff;
+	background: url(../images/follow.png) no-repeat 272px 0px;
+	background-color: #C8C8C8;
+	position: relative;
+}
+.return_process .return_process_step .step_num{
+	position: absolute;
+	top:12px;
+	left:49px;
+	background-color: #ffffff;
+	color: #C8C8C8;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 22px;
+	width:22px;
+	height:22px;
+}
+.return_process .return_process_step .step_title{
+	display: block;
+	line-height: 45px;
+	text-indent: 75px;
+}
+.return_process_step.current{
+	background-image: url(../images/current.png);
+	background-color: #EA2D39;
+}
+.return_process_step.current .step_num{
+	color:#EA2D39;
+}
+.return_process_step.done{
+	background-image: url(../images/done1.png);
+	background-color: #F3828A;
+}
+.return_process_step.done .step_num{
+	color:#F3828A;
+}
+.return_process_step.done.last_done{
+	background-image: url(../images/done.png);
+}
+.return_process .return_process_step:last-child{
+	background-image: none;
+}
+/***退货信息**/
+.return_info{
+	height:440px;
+	border:1px solid #E4E4E4;
+	margin-top: 20px;
+}
+.return_info_left{
+	width:752px;
+	height:440px;
+	display: inline-block;
+	float:left;
+}
+.return_info_right{
+	width:442px;
+	height:440px;
+	display: inline-block;
+	border-left:1px solid #E4E4E4;
+	float:left;
+}
+.return_info_left .apply_service{
+	width:695px;
+	height:50px;
+	margin-left: 20px;
+	border-bottom:1px solid #E4E4E4;
+}
+.return_info_left .apply_service .apply_service_content{
+	width:695px;
+	height:26px;
+	margin-top: 12px;
+	float:left;
+	line-height: 26px;
+}
+.return_info_left .apply_service .apply_service_content .asc_title{
+	display: inline-block;
+}
+.return_info_left .apply_service .apply_service_content select{
+	font-weight: bold;
+}
+.return_info_left .as_form_table{
+	width:752px;
+	height:390px;
+}
+.return_info_left .as_form_table .as_form_label{
+	text-align: right;
+	width:140px;
+}
+.as_form_table tr.return_reason{
+	height:50px;
+}
+.as_form_table tr.return_amount{
+	height:50px;
+}
+.as_form_table tr.return_desc{
+	height: 50px;
+}
+.as_form_table tr.return_cert{
+	height: 50px;
+}
+.as_form_table tr.return_cert .upload_btn_group{
+	width:122px;
+	height:30px;
+	margin-left:10px;
+	position: relative;
+}
+.as_form_table tr.return_cert .upload_btn_group .upload_btn{
+	width:122px;
+	height:30px;
+	text-align: center;
+	color: #000000;
+	background-color: #ffffff;
+	line-height: 30px;
+	cursor: pointer;
+	border:1px solid #CCCCCC;
+}
+.as_form_table tr.return_cert .upload_btn_group .upload_file{
+	width:122px;
+	height:30px;
+	position: absolute;
+	top:0;
+	left:0;
+	filter: alpha(opacity: 0);
+	opacity: 0;
+	cursor: pointer;
+}
+.as_form_table tr.return_cert_img{
+	height: 82px;
+}
+.return_reason select{
+	width:200px;
+	height:26px;
+	border:1px solid #CCCCCC;
+}
+.return_amount .return_amount_input{
+	width:70px;
+	height:26px;
+	border:1px solid #CCCCCC;
+}
+.return_desc textarea{
+	width:520px;
+	height:50px;
+	margin-left:10px;
+	border:1px solid #CCCCCC;
+}
+.as_form_table tr.return_cert_img .img_wrapper{
+	position: relative;
+	width:80px;
+	height: 80px;
+	display: inline-block;
+	float:left;
+	margin-left: 10px;
+}
+.as_form_table tr.return_cert_img .img_wrapper img{
+	width:80px;
+	height: 80px;
+	border-radius: 10px;
+}
+.as_form_table tr.return_cert_img .img_wrapper .close{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	right:0;
+	cursor: pointer;
+	background: url(../images/close_24_24.png) no-repeat 0px 0px;
+	background-color: #000000;
+}
+.as_form_table tr.return_cert_img .img_wrapper.upload{
+	cursor: pointer;
+	width:76px;
+	height: 76px;
+	border:2px dashed #B8B8B8;
+	border-radius: 10px;
+	background:url(../images/add_32_32.png) no-repeat 21px 20px;
+}
+.return_btn_group{
+	height: 98px;
+}
+.return_btn_group .btn_group{
+	display: inline-block;
+	width:117px;
+	height:55px;
+	text-align: center;
+	line-height: 55px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn_submit{
+	background-color: #EA2D39;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.btn_cancel{
+	margin-left: 20px;
+	color:blue;
+}
+/***右侧订单信息**/
+.return_info_right .in_right_width{
+	float: left;
+	width:400px;
+	margin-left: 30px;
+}
+.return_info_right .order_title{
+	height:50px;
+	line-height: 50px;
+	font-weight: bold;
+	border-bottom: 1px solid #E4E4E4;
+}
+.return_info_right .order_images{
+	height:80px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.return_info_right .order_images .left_img{
+	width:74px;
+	height:80px;
+}
+.return_info_right .order_images .left_img img{
+	width:58px;
+	height:58px;
+	margin-top:11px;
+}
+.return_info_right .order_links{
+	width:312px;
+	height:33px;
+	margin-top: 15px;
+	font-size: 13px;
+}
+.return_info_right .order_links a{
+	width:312px;
+	height:15px;
+	color: #0086CF;
+	display: block;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.return_info_right .order_links span{
+	width:312px;
+	height:17px;
+	line-height: 20px;
+	display: block;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.order_info_table{
+	height:262px;
+}
+.order_info_table .order_info_tr{
+	height:45px;
+	line-height: 45px;
+}
+.order_info_table .order_info_tr .left_title{
+	width:70px;
+	height:45px;
+	color:#999999;
+}
+.order_info_table .order_info_tr .right_content{
+	width:330px;
+	height:45px;
+}
+.order_info_table .order_info_tr.saler_name .right_content{
+	font-weight: bold;
+}
+.order_info_table .order_info_tr.saler_name .right_content a{
+	display: inline-block;
+	height:45px;
+	color: #000000;
+	float:left;
+}
+.order_info_table .order_info_tr.saler_name .right_content .contact_saler{
+	display: inline-block;
+	width:68px;
+	height:18px;
+	float:left;
+	margin-top:14px;
+	cursor: pointer;
+	margin-left:3px;
+	background: url(../images/kefu.gif) no-repeat 0px -4px;
+}
+.order_info_tr.saler_phone .right_content{
+	font-weight: bold;
+}
+.order_info_tr.order_code .right_content{
+	color:#0086CF;
+	font-weight: bold;
+}
+.order_info_tr.piece_price .right_content{
+	font-weight: bold;
+}
+.order_info_tr.postage .right_content{
+	font-weight: bold;
+}
+.order_info_tr .ensure span{
+	float:left;
+	width:16px;
+	height:16px;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+.right_content.ensure .sevrnday_ensure{
+	background: url(../images/7day_16_16.png) no-repeat 0px 0px;
+}
+.right_content.ensure .ensure_icon{
+	background: url(../images/ensure_16_16.png) no-repeat 0px 0px;
+}
+.service_introduce{
+	margin-top: 10px;
+	margin-bottom: 58px;
+	border:1px solid #E4E4E4;
+    padding-bottom: 30px;
+}
+.si_in_width{
+	height:20px;
+	width:1130px;
+	display: block;
+	margin: 0 auto;
+}
+.service_introduce .si_title{
+	font-size: 14px;
+	height:58px;
+	line-height: 58px;
+	font-weight: bold;
+	border-bottom: 1px solid #E4E4E4;
+}
+.service_introduce .si_item_title{
+	height:62px;
+	line-height: 62px;
+	font-weight: bold;
+}
+
+/*******处理页面css*/
+.return_info_left .handle_info_title{
+	width:695px;
+	height:20px;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-top: 32px;
+	font-size: 14px;
+}
+.return_info_left .handle_info_tips{
+	width:695px;
+	list-style: disc;
+	margin-left: 34px;
+	margin-top: 18px;
+	font-size: 13px;
+}
+.return_info_left .handle_info_tips li{
+	margin-bottom: 10px;
+}
+.return_info_left .other_links_content{
+	width:712px;
+	height:300px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border-top: 1px solid #E4E4E4;
+}
+.handle_info_tips .day,.handle_info_tips .hour,.handle_info_tips .minutes,.handle_info_tips .seconds{
+	color:red;
+}
+.other_links_content .other_links{
+	margin-top: 20px;
+}
+.other_links_content .other_links a{
+	text-decoration: none;
+	display: inline-block;
+	color:#0086CE;
+	margin-right:20px;
+}
