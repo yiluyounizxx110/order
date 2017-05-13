@@ -46,7 +46,7 @@
 	overflow: hidden;
 	border-bottom: 1px solid #DDDDDD;
 }
-.cate .cate_in .category_name.m_h_160{
+.cate .cate_in .category_name_list.m_h_160{
 	overflow-y: scroll;
 	max-height: 160px;
 }
@@ -282,6 +282,42 @@
 	height:32px;
 }
 .cate .cate_in .category_length_list li a{
-	width:160px;
+	width:80px;
+	height:32px;
+}
+/***厚度**/
+.cate .cate_in .category_thick{
+	height:32px;
+	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
+}
+.cate .cate_in .category_thick_list{
+	width:977px;
+}
+.cate .cate_in .category_thick_list li{
+	float: left;
+	width:80px;
+	height:32px;
+}
+.cate .cate_in .category_thick_list li a{
+	width:80px;
+	height:32px;
+}
+/***上市时间**/
+.cate .cate_in .category_time{
+	height:32px;
+	overflow: hidden;
+	border-bottom: 1px solid #DDDDDD;
+}
+.cate .cate_in .category_time_list{
+	width:977px;
+}
+.cate .cate_in .category_time_list li{
+	float: left;
+	width:80px;
+	height:32px;
+}
+.cate .cate_in .category_time_list li a{
+	width:80px;
 	height:32px;
 }
